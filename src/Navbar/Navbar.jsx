@@ -23,7 +23,7 @@ const Navbar = () => {
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <a className="nav-link active" aria-current="page" href=".">
-                QUADIR DRONE
+                QUADIR DRONEs
               </a>
             </li>
             <li className="nav-item">
