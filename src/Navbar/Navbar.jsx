@@ -37,8 +37,8 @@ const Navbar = () => {
                 REVIEWS
               </a>
             </li>
-            <button className="btn btn-primary rounded-pill">ORDER NOW</button>
           </ul>
+            <button className="btn btn-primary rounded-pill d-none d-lg-block">ORDER NOW</button>
         </div>
       </div>
     </nav>

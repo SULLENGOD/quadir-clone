@@ -3,6 +3,8 @@ import Navbar from './Navbar/Navbar';
 import Section from './Section/Section';
 
 function App() {
+
+ 
   return (
     <>
       <Navbar />
