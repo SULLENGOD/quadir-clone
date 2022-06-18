@@ -1,0 +1,13 @@
+.fw-bolder {
+    padding-top: 5px;
+}
+
+.drone {
+    height: 500px;
+    width: 350;
+}
+
+.text-center {
+    background-color: rgb(218, 219, 221);
+    max-width: 100%;
+}

@@ -1,12 +1,13 @@
 import React from "react";
 import logo from './img/Logo.png'
+import './Navbar.css'
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-light">
       <div className="container-fluid">
         <a className="navbar-brand" href=".">
-          <img src={ logo } alt="logo" srcSet="" />
+          <img src={ logo } alt="logo" srcSet="" className="logo"/>
         </a>
         <button
           className="navbar-toggler"
@@ -22,8 +23,8 @@ const Navbar = () => {
         <div className="collapse navbar-collapse " id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href=".">
-                QUADIR DRONEs
+              <a className="nav-link" aria-current="page" href=".">
+                QUADIR DRONE
               </a>
             </li>
             <li className="nav-item">
