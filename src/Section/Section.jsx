@@ -2,19 +2,13 @@ import React from "react";
 import { useState } from "react";
 import Timer from "../Timer/Timer";
 import Drone from "./img/Drone.png";
+import getCountry from "../helpers/getCountry";
 import "./Section.css";
 
 const Section = () => {
-  const getCountry = async () => {
-    const resp = await fetch("https://api.ipregistry.co/?key=ogg11epxr23zr784");
-    const countryRes = await resp.json();
-
-    const country = countryRes.location.country.name;
-
-    return country;
-  };
-
-  const [country, setCountry] = useState(null);
+  const [country, setCountry] = useState({
+    country: []
+  });
   const [timer, setTimer] = useState(null);
 
   getCountry().then((data) => {
@@ -31,7 +25,7 @@ const Section = () => {
   return (
     <div className="text-center pt-3">
       <h1 className="fw-bolder pb-3">
-        The first high-end drone at an affordable price, now in {country}
+        The first high-end drone at an affordable price, now in {country.country}, {country.city}
       </h1>
       <button
         className="btn btn-primary rounded-pill btn-lg"
